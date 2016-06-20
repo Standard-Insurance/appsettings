@@ -1,0 +1,2238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
+<!-- 2015-04-28T14:59:52 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MotorPolicySchedule" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="978261b3-06f6-4920-9778-08db2c7c7302">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="039b86b2-b8aa-45e2-838b-22d8fc279fd2"/>
+	<subDataset name="Table Dataset 1" uuid="8fcd3531-7147-47dd-b6c8-f98489bdc9b9"/>
+	<subDataset name="Table Dataset 2" uuid="d4934b61-1b50-4568-a44e-3a8f41789faa"/>
+	<parameter name="to" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="insured" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="policyNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="issueDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="clientNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="agentNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="quotationNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fromDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="toDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="days" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="premium" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="vat" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="dst" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="lgt" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="amountDue" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cocVf" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cover1si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover2si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover3si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover4si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover5si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover6si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover7si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover8si" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover1prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover2prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover3prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover4prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover5prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover6prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover7prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="cover8prem" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="plateNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="makeModel" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="typeOfBody" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="modelYear" class="java.lang.Short" isForPrompting="false"/>
+	<parameter name="engineNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="chassisNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="color" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cocNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="authenticationNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="mvFileNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rapNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="deductible" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="towingFee" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="arLimit" class="java.math.BigDecimal" isForPrompting="false"/>
+	<parameter name="assignee" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="mortgagee" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="itemType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="esignURL" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="logo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="esignURL2" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="89" width="215" height="15" uuid="c7647edd-3b0e-46a3-b7aa-0c801556a3f7"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[P O L I C Y    S C H E D U L E]]></text>
+			</staticText>
+			<image>
+				<reportElement x="69" y="6" width="561" height="83" uuid="1aff1a0f-a8a5-4f4d-bf74-68b465be6875"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="69" y="6" width="561" height="83" uuid="5717ad48-e605-47d9-a685-cc694d064d43"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="640" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="111" width="531" height="70" uuid="a0abd421-7fd3-4aa0-9695-cf1d720d8432"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="1" width="531" height="110" uuid="728292b1-59c6-4f27-a3f1-9d589db1234e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="3" width="45" height="11" uuid="fd05eee7-75af-4337-a47a-9914bfc330e6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="22" width="45" height="11" uuid="415262a9-9415-47e9-b06c-d9ac636f88f0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="73" width="45" height="11" uuid="aed3c046-3f79-48d0-9707-fd25b1488279"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Insured]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="3" width="12" height="11" uuid="6b2b052d-ebb3-408e-aa4e-f7df2e95654d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="22" width="12" height="11" uuid="dfa87d81-9ff4-4c36-8204-0fa248feceea"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="73" width="12" height="11" uuid="8370775b-3abe-46ec-a75b-1c666ef35a01"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="96" width="12" height="11" uuid="bd871aa1-c52a-4f18-bd3c-2a28168eebfa"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="96" width="45" height="11" uuid="7104e026-d076-4fee-afd1-484f49ae9ac3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Business]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="96" width="83" height="11" uuid="6f286038-f1a4-4452-b2f0-ce13cfd29fab"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[New Business]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="3" width="12" height="11" uuid="8645f1fa-e1f2-47fa-8834-263fa3f0b344"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="3" width="84" height="11" uuid="87e36846-cb0e-4199-82a5-979fa3fcc7a5"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Policy Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="20" width="84" height="11" uuid="99525c3a-95a3-4b33-a98f-fd4fca8ceb2f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Issue Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="20" width="12" height="11" uuid="72a6732d-5ac8-4f32-b86a-decae63979c4"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="30" width="12" height="11" uuid="69f2e07b-6c5e-4bac-af30-0a422ea84ca3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="30" width="84" height="11" uuid="21d40881-75fc-418c-8925-4abb0f177959"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Client Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="41" width="12" height="11" uuid="b1d325f9-48ff-443f-a7fa-68ec40a954a4"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="41" width="84" height="11" uuid="ce776961-fa3a-496d-a21d-e2f974552ab4"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Agent Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="52" width="12" height="11" uuid="f9c1a074-d871-478c-86fc-e78c5eadeb4f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="52" width="84" height="11" uuid="f1095033-cd60-4eb1-ba60-82329f44ff2c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Quotation Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="62" width="84" height="11" uuid="d4915da4-98bb-434c-b3e9-9d994ad6d2d7"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[From]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="62" width="12" height="11" uuid="54548085-600e-4bb9-be66-bc0119c5ee3e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="73" width="84" height="11" uuid="cbaf212b-e3d7-4330-a215-c667dd7f677a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="73" width="12" height="11" uuid="5adbed7c-c167-4cf7-a34d-f0b028096382"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="84" width="12" height="11" uuid="347d07bc-0e19-4d38-aa69-2a526fc4bb9d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="84" width="84" height="11" uuid="6a8bcc46-427a-4795-9504-c88bc800baf9"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Days]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="113" width="208" height="11" uuid="51d88dda-bee8-4aaa-8d79-f41bc68d7c66"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUMMARY OF PREMIUM AND OTHER CHARGES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="124" width="92" height="11" uuid="c6935f3b-8e30-4421-a805-e810d97f8928"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PREMIUM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="125" width="36" height="11" uuid="1df2e48e-de84-45e6-bddf-678801644abd"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="125" width="45" height="11" uuid="0bf912f9-da23-42cb-a710-70265c5e6491"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="136" width="45" height="11" uuid="523b0dcd-51a5-4d01-8390-a4044d6f8bed"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="136" width="36" height="11" uuid="91f6f963-350e-47cf-8242-b35d259ee8c6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="135" width="92" height="11" uuid="a67c5dfc-f764-432a-ab44-1dcbdb9547cc"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Value Added Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="145" width="92" height="11" uuid="a712b740-4928-495d-b8c3-9a76f1afce83"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Documentary Stamp Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="146" width="36" height="11" uuid="5dec20a9-0699-4c16-a3c9-88c354c3648d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="146" width="45" height="11" uuid="f4e78ea6-ce14-420d-a84f-870b36ad43f6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="156" width="45" height="11" uuid="29a6c7dc-e100-4880-8c0f-16b45d0f9d3b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="156" width="36" height="11" uuid="8a35474d-58b2-43a1-97bb-f7dde846f963"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="155" width="92" height="11" uuid="0f69a7dd-20f0-4918-889f-831f001a9b76"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Local Government Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="168" width="91" height="11" uuid="a874885d-eb42-4de3-90dc-957f8ad89c63"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUNT DUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="169" width="45" height="11" uuid="6f20714d-0026-432e-ad19-f6deabe5ad8f"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="169" width="36" height="11" uuid="e286b459-e328-46d8-a923-11aa35b3e3d7"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="125" width="45" height="11" uuid="215f98ef-084e-4667-bb24-81faeee60762">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="125" width="36" height="11" uuid="ab7d3f3b-5a42-459d-bb39-8cd70df2c20f">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="125" width="67" height="11" uuid="62c1178e-c804-45bf-8b2b-b02732d8d6af">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[COC VF]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="181" width="531" height="101" uuid="fbe41b2f-18bd-4a26-a664-325e99f213ef"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="181" y="183" width="43" height="11" uuid="d8b5dc90-32a5-46a4-88ce-786344de09e2"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERIL/S]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="183" width="102" height="11" uuid="595328ea-4dec-412f-9b91-5e2c03f59619"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUM INSURED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="466" y="183" width="102" height="11" uuid="6d97ce15-e1f3-4a09-96ea-a199e15ef17d">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PREMIUM]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="282" width="531" height="115" uuid="26615226-f8cb-42cd-8165-c30d7f647802"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="165" y="284" width="208" height="11" uuid="64260711-e90a-4adf-9981-2cc7c0126d78"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DETAILS OF INSURANCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="299" width="35" height="11" uuid="4f7d587c-723d-4f65-88d6-059bb2e156b5"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Plate No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="309" width="54" height="11" uuid="ef1aa941-77bf-476c-bc73-678599bb7473"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Make Model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="319" width="54" height="11" uuid="7cbdd499-f353-42bc-a60c-572337159bce"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Type of Body]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="329" width="54" height="11" uuid="cfd0ce9d-c6c2-491e-a225-c4be3c2d53f3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Model Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="339" width="54" height="11" uuid="255e2408-f77d-41c7-a253-857dcf829f55"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Motor/Engine No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="350" width="54" height="11" uuid="3a83deb4-ea78-4bcf-bc11-4d7628a498d3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Serial/Chassis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="360" width="54" height="11" uuid="dead32ba-3e62-4fb0-9a14-6ab5a6b761c9"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Color]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="370" width="54" height="11" uuid="f337731b-7963-4de9-a715-95846bca7e32">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[COC No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="380" width="54" height="11" uuid="27e97f53-4f69-4f6c-9b4f-2ae9f810fe5e">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Auth No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="309" width="7" height="11" uuid="f6a3f15d-488b-4c2a-9c4d-67ba5461854f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="319" width="7" height="11" uuid="a10befc3-1947-435c-8956-c42174940162"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="329" width="7" height="11" uuid="585d9c1a-9fcf-4b70-ab85-eed82590daff"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="299" width="7" height="11" uuid="baf63b0d-b1ca-46b9-b066-5ad59cc20d75"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="339" width="7" height="11" uuid="6c24af45-1427-409c-b134-c0479f8651c4"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="350" width="7" height="11" uuid="236d0a10-f3fd-44f5-b700-b0852896d259"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="360" width="7" height="11" uuid="13a3e91a-55ca-4e9f-ae66-22cf5a892062"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="370" width="7" height="11" uuid="c0210e17-a3d3-4f27-8d0b-714495a76f13">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="380" width="7" height="11" uuid="b489965e-d311-47a5-ac3e-9d727b7c4aef">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="299" width="54" height="11" uuid="ea651f69-4d36-4b11-ae5f-5c96ab6e30ed"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[MV File No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="299" width="7" height="11" uuid="a119b0d8-ab5d-453c-bf9a-b4b3e4e2948d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="309" width="54" height="11" uuid="fe72adbb-05e4-4406-b8ec-c1a5b4a0e9db"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[RAP Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="309" width="7" height="11" uuid="71791682-9513-4a89-9db0-cd002aa6ace6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="319" width="54" height="11" uuid="d417d78a-aa98-43d6-b93d-9057b27ea73e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Deductible]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="319" width="7" height="11" uuid="60c6b558-6de1-4585-99dc-e0413d690734"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="329" width="54" height="11" uuid="51259506-ca7c-49ae-934b-42f33b184072"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Towing Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="339" width="54" height="11" uuid="7ef684be-4bcc-41d0-a9a2-15901b75c69a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[AR Limit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="349" width="54" height="11" uuid="57da87f5-1c4d-4351-85f3-04910bcdc4fa"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Assignee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="371" width="54" height="11" uuid="5bf0dd17-93ec-4c31-954e-ed0e8ccc8748">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Mortgagee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="381" width="54" height="11" uuid="bf70c195-6ded-4a0f-b7d2-c8aedaea0458">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Item Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="329" width="7" height="11" uuid="22660a44-b837-48e3-bdb4-ed2b38828943"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="339" width="7" height="11" uuid="4631236d-fcf0-4753-b94b-f26035fc7e3e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="349" width="7" height="11" uuid="1cf3a8b6-ab5c-407c-989a-5bf2c0fb7182"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="371" width="7" height="11" uuid="ee8bcaa0-b2c4-4a50-a194-f73a325d6a10">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="381" width="7" height="11" uuid="78ee9395-68d7-49c9-b3f6-385b62cdc20d">
+					<printWhenExpression><![CDATA[new Boolean(false)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="397" width="531" height="100" uuid="97a1ad27-422a-44e8-8749-8a9c3f05736b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="400" width="208" height="11" uuid="644a5c97-feab-40af-9109-e935ee2cd0be"/>
+				<textElement textAlignment="Left">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Warranties and Clauses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="410" width="151" height="11" uuid="2b4570fa-fb80-4732-bf78-d155eaa5c10c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[DATE RECOGNITION CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="430" width="151" height="11" uuid="44f23c20-8bde-42f4-a20b-d8aaab551b3b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PAIR AND SET ENDORSEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="410" width="150" height="11" uuid="cdbe26d0-5d58-4750-8af1-4b6124049c17"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[DEDUCTIBLE CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="430" width="151" height="11" uuid="e6411ac6-e3ec-4892-9720-7786e5a26a5d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[IMPORTATION CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="465" width="208" height="11" uuid="04e0f696-7aa0-4b2c-b3c6-89a2dc09ebb3">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Accessories Declared]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="475" width="183" height="11" uuid="9210f4c8-f69f-4b82-a003-cb185405e41a">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[WITH BUILT IN ACCESSORIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="420" width="169" height="11" uuid="685832a3-38b0-494b-9eb3-88170c86d5e7"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[TERRORISM EXCLUSION CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="420" width="184" height="11" uuid="21df8d7e-0cf9-45c8-900a-79fac8953316"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[MOTOR VEHICLE ACCESSORY ENDORSEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="498" width="452" height="11" uuid="c5e545ea-1910-46b7-a60a-79556bf4c3ba"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THE POLICY SCHEDULE, SPECIFICATIONS AND ANY ENDORSEMENTS WILL BE READ AS ONE CONTRACT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="509" width="532" height="8" uuid="bddb187b-7752-47d1-9bf1-0d114bdf4f87"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Documentary Stamps to the value shown herein have been affixed/imprinted to the premium register of the company in compliance with Revenue Regulation No. 15-2001 dated]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="517" width="532" height="8" uuid="0890ff8b-426d-4cb8-a5df-c64721ace02a"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[October 16, 2001. In witness whereof, the company has caused this Policy to be signed by its duly authorized representative. This document with the e-sign of Standard Insurance Co. Inc.'s ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="525" width="532" height="8" uuid="e730a608-29bb-47e7-8fa0-0360305032d4"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[authorized representative is system generated and serves as your official policy.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="344" y="554" width="119" height="34" uuid="12489589-31b2-4094-8157-829e1604294c"/>
+				<imageExpression><![CDATA[$P{esignURL}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="345" y="578" width="84" height="11" uuid="53f58aa1-1446-4d0c-9ef0-eb79b8aba8ad"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Patricia Echauz Chilip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="588" width="118" height="11" uuid="3c170cfc-4ab6-4bbb-baaa-b5d84d6e219f"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[President]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="610" width="78" height="8" uuid="31567456-f281-4826-a801-832d42209b9e"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[IMPORTANT REMINDER:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="618" width="563" height="10" uuid="213afaad-da00-4850-9bdc-fcdf0a896691"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Please do not forget to check the correctness and accuracy of the details on the Policy Schedule. This will serve as the basis in the assessment and settlement of a claim. Any discrepancy or non ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="627" width="569" height="13" uuid="8e8f1e9b-9e93-41c4-93d1-7f8146ea1dcc"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[declaration may cause inconvenience or even nullification of a claim. Should there be any correction/s or change/s, inform your agent or writing office IMMEDIATELY. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="69" y="3" width="203" height="11" uuid="9a28bc97-870e-4f79-af77-89e6f4011eab"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{to}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="32" width="202" height="10" uuid="9d6cdb8b-4dd2-4adf-b6c2-9bfa8fff7ec4"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="73" width="239" height="11" uuid="ec2f0c54-7285-4b40-9aed-ee328562e9ab"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{insured}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="403" y="3" width="100" height="11" uuid="87b22a17-19cd-44c7-922d-bea6ecb7c781"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{policyNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="20" width="100" height="11" uuid="1f036e2c-053f-4419-8696-fb60f781b3bf"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{issueDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="30" width="100" height="11" uuid="08083a12-dd2a-4479-adc2-6c2d326193d1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{clientNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="41" width="100" height="11" uuid="bb7218d6-f8bb-4b92-acc9-091f933f026c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{agentNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="403" y="52" width="100" height="11" uuid="38a7e61e-3913-4a36-92ac-2942dd4e74c0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{quotationNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="84" width="100" height="11" uuid="918bbb06-1de4-4cfd-be6e-495a5c324782"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{days}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="204" width="100" height="11" uuid="515597fe-05ad-458c-bacc-e3318bc6fc87"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="214" width="100" height="11" uuid="1e02b06b-323d-4d1a-abf7-01c11eb4443b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="224" width="100" height="11" uuid="9aab5638-825e-4e40-a13e-470c63083081"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="234" width="100" height="11" uuid="1ad8ff67-355c-4197-83a9-82b16aadeb43"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="244" width="100" height="11" uuid="c4669fd7-9035-476b-b62f-a11babd9936b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="254" width="100" height="11" uuid="fc96346e-f6d0-4ec7-9985-254effec1ddb"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="264" width="100" height="11" uuid="b3e13070-f614-4d37-894d-8cc39e7638a1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="194" width="100" height="11" uuid="2456d6ee-e9fc-4b97-843e-ee7219a1423f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="299" width="100" height="11" uuid="63d974a8-dc77-4612-b88d-36fc5343e5aa"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{plateNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="309" width="193" height="11" uuid="d25e4537-ed8c-44d8-b41a-cbf1322aec5f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{makeModel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="319" width="100" height="11" uuid="7f61f1bc-50a6-401c-8f9d-8c872e2d6c50"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{typeOfBody}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="339" width="100" height="11" uuid="263b4075-0ece-4cfb-bc2e-f18c51a5792b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{engineNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="349" width="100" height="11" uuid="294475ce-ed80-4e99-8b2d-1d9113247869"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chassisNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="359" width="100" height="11" uuid="87ff55fa-aa4c-4f1a-b99a-79feb7c75352"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{color}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="369" width="100" height="11" uuid="a3b46509-f067-43c2-8609-f472758a019e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cocNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="380" width="100" height="11" uuid="0a191ad8-4687-4776-b5f3-61e94ab60175"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{authenticationNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="341" y="299" width="100" height="11" uuid="07c59738-f6cb-4aae-8031-a529a55f382d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mvFileNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="309" width="100" height="11" uuid="11c2dc67-eaed-4e86-8f2e-50472a94eb12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rapNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="349" width="196" height="11" uuid="5aff3e55-35ca-4782-b679-d9d676ddb511"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{assignee}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="371" width="100" height="11" uuid="240a28db-af0c-4ed6-93b2-bb79278966d0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mortgagee}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="381" width="100" height="11" uuid="2e940d4a-91a4-4bcc-9552-72f98f15e13d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{itemType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="62" width="100" height="11" uuid="8b931006-b869-4916-b894-a534024e749e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="73" width="100" height="11" uuid="10066994-22e3-4ef3-b8fe-76039c05543f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="42" width="202" height="11" uuid="ef3e8335-dc23-49ef-aaf3-a0bc27d09b10"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="329" width="100" height="11" uuid="2d9c68b1-d7a0-45c3-9c69-84b3014ef2d5"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{modelYear}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="319" width="100" height="11" uuid="515211a9-908e-4e71-b68f-ad06eb85271e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deductible}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="329" width="100" height="11" uuid="6674f486-672b-447b-b743-fe2310e4f4e6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{towingFee}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="339" width="100" height="11" uuid="a300daf5-9e98-48c9-a968-5a48f102023a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{arLimit}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="220" y="125" width="63" height="11" uuid="79889d46-b24b-4eb9-91a2-40b5168dbb2b"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{premium}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="220" y="136" width="63" height="11" uuid="5835b852-5749-400d-88b6-6485118cfe24"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vat}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="220" y="146" width="63" height="11" uuid="41f7ee8d-44cf-4ddd-9ed8-6488e98d3291"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dst}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="220" y="156" width="63" height="11" uuid="d68490af-987f-47a4-bd06-0d2f052d6ac6"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lgt}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="220" y="169" width="63" height="11" uuid="dee86138-3f6e-4326-b208-ae80e71d48cc"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{amountDue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="125" width="55" height="11" uuid="3fe91075-23b4-47db-9b81-3d1ed5bdabf4">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cocVf}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="194" width="100" height="11" uuid="6688784c-d54f-4c00-ad60-4d58c4f8a946"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover1si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="204" width="100" height="11" uuid="21269107-e716-4e35-acaa-dd7680d078b9"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover2si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="214" width="100" height="11" uuid="72e5a84b-8a88-4385-b1e6-90c691c667fb"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover3si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="224" width="100" height="11" uuid="94a3a3dd-b056-444c-867f-022707064daf"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover4si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="234" width="100" height="11" uuid="4b5d2c9e-6f89-434f-979d-2635637ce553"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover5si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="244" width="100" height="11" uuid="1b437583-1ce2-43af-9a39-8afd6818296f"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover6si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="254" width="100" height="11" uuid="099bc0c5-2b64-4bd1-80a5-72d464edab14"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover7si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="283" y="264" width="100" height="11" uuid="5334c1b7-1144-4bb5-add5-cb6bc08312c6"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover8si}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="204" width="100" height="11" uuid="5b55e503-721f-4448-a025-af30a1bacd66">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover2prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="194" width="100" height="11" uuid="cfd148af-5d1e-4d68-adca-98917d33ae93">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover1prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="214" width="100" height="11" uuid="713506cd-5624-48d8-b8ef-2ade63361bcf">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover3prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="224" width="100" height="11" uuid="08b571cd-f1ed-4900-8905-2d733a0fe8c0">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover4prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="234" width="100" height="11" uuid="4e1c0c9b-2d18-405d-a07f-8ee081a8498d">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover5prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="244" width="100" height="11" uuid="7f31be0d-105b-4208-a132-6317c84121ca">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover6prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="254" width="100" height="11" uuid="1e189775-0b8a-4445-befd-fa8eb3fbf29f">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover7prem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="462" y="264" width="100" height="11" uuid="1053f995-34ad-4d8b-a663-295d4691669b">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cover8prem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="440" width="150" height="11" uuid="cdbe26d0-5d58-4750-8af1-4b6124049c17"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[DRUNKEN DRIVER CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="440" width="150" height="11" uuid="cdbe26d0-5d58-4750-8af1-4b6124049c17"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ACTS OF NATURE ENDORSEMENT]]></text>
+			</staticText>
+			<image>
+				<reportElement x="78" y="554" width="119" height="34" uuid="a551fb91-8ade-429a-ad2f-5025ad1b8ade"/>
+				<imageExpression><![CDATA[$P{esignURL2}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="79" y="578" width="84" height="11" uuid="09695a97-da72-44df-b0a0-0dee0cc1db08"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Maribeth C. Castro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="588" width="118" height="11" uuid="fdb9a2e3-aaff-430d-8f55-3e789857e347"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Head - Risk Management Division]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="70" y="22" width="202" height="10" uuid="4c4e14f5-e1f5-491b-8209-91d9bef890d4"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address1}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="88">
+			<image>
+				<reportElement x="69" y="4" width="561" height="83" uuid="1aff1a0f-a8a5-4f4d-bf74-68b465be6875"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+		<band height="652">
+			<staticText>
+				<reportElement x="10" y="3" width="287" height="13" uuid="783ee33b-7d8f-4915-9365-e3db960a4509"/>
+				<textElement>
+					<font fontName="SansSerif" size="10" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Warranties, Clauses and Endorsements for Policy ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="26" width="118" height="13" uuid="53c875a0-d99f-4bcb-bbd5-ede265df7bc8"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[DATE RECOGNITION CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="46" width="526" height="13" uuid="09242a0a-48cc-4a09-a496-7161e5f776bf"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[This Company will not indemnify the Insured against:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="80" width="526" height="14" uuid="97643404-c7a5-470c-a689-32a3c92b7016"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Any other cost and expenses of whatsoever nature directly or indirectly caused by/contributed to or arising from:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="112" width="526" height="38" uuid="b6208d0b-07e8-4c1d-b700-1fdd2ad30f56"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The failure or inability of any time of any computer, electronic equipment, data processing equipment or media, microchip, embedded chip, integrated circuit or similar device or any computer software, whether the property or the insured or not, to:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="173" width="526" height="14" uuid="7a2ec492-51d3-42d8-a253-0f8313858a19"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(a)recognize correctly or treat any date as its true calendar date and/or]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="186" width="526" height="14" uuid="a2ee93b4-fa26-4ff2-ae1a-c222892e6154"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(b)capture, save, retain, process, manipulate or interpret correctly any data information command]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="199" width="526" height="14" uuid="3aa9ac55-bdad-489f-8ada-c4951aa72504"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[or instruction as a result of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="254" width="526" height="14" uuid="dbf8b4b1-6363-441b-bcfa-62e139344aa2"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(i)its failing to treat any calendar date as its true date or]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="267" width="526" height="14" uuid="f3e24533-004f-44f6-b88f-655a991ef7c4"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(ii)the operation of any programmed command which by reason of a failure or inability to treat any]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="280" width="526" height="14" uuid="459a7d70-edb9-43fa-b3ed-a466c4179c86"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[date as its true calendar date causes the loss of data or an inability to capture, save, retain]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="293" width="526" height="14" uuid="a7959b07-f4ce-40e7-b242-5001627f4140"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[or process correctly such data at any time.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="358" width="483" height="38" uuid="edaefe34-4a7d-4612-9990-6d6594ab9df3"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Notwithstanding any provision to the contrary in this Policy or in any endorsement thereto the Company shall not be liable for any loss, damage, cost, expense or consequential loss of whatsoever nature directly or indirectly caused by, contributed to by, resulting from, or arising out of or in connection with:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="358" width="39" height="14" uuid="65eca72d-9499-44ed-9f1f-20545eb0fb64"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="342" width="139" height="13" uuid="352b6c97-ff03-4403-86e7-43d0d0f3fca4"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[TERRORISM EXCLUSION CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="396" width="483" height="14" uuid="a080a912-006a-4cbf-9011-39f0f73d4528"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[any act of terrorism regardless of any other cause or event contributing concurrently or in any other sequence to the loss]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="396" width="39" height="14" uuid="8d6b63ad-9206-4392-a021-8778be4a798e"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="409" width="482" height="14" uuid="0b36775c-eb01-4630-a1d3-2c3b9521b97b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Any action in controlling, preventing, suppressing, retaliating against or responding to any such act of terrorism.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="409" width="39" height="14" uuid="95cbcda2-4d5e-4bfe-be35-bedc655dcdd9"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="449" width="483" height="60" uuid="5c65c93e-2498-4857-a338-9a5d96bdbcd1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[For the purpose of this endorsement an act of terrorism includes any act, preparation or threat of action of any person or group(s) of persons whether acting alone or on behalf of or in connection with any organization(s) or government(s) de jure or de facto committed for political, religious, ideological or similar purposes including the intention to influence any government de jure or de facto or any nation or any political division thereof and/or to intimidate the public or any section of the public of any nation and which.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="449" width="39" height="14" uuid="05ee0f52-67f2-4c2a-9bf9-51eb8546a8e1"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="508" width="483" height="14" uuid="5a1f7739-a5bb-429b-91c6-96154bc199e2"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Involves violence against one or more persons: or]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="508" width="39" height="14" uuid="6831245a-0893-4fef-80c3-bd9bad6e34cc"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.1.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="256" y="4" width="161" height="12" uuid="e1f47721-334e-4eb0-b9c6-7ce47206bb7b"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{policyNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="50"/>
+		<band height="90">
+			<image>
+				<reportElement x="69" y="0" width="561" height="89" uuid="1aff1a0f-a8a5-4f4d-bf74-68b465be6875"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="14" y="1" width="288" height="13" uuid="40618b43-0e65-45ef-a204-8c868d2e2444"/>
+				<textElement>
+					<font fontName="SansSerif" size="10" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Warranties, Clauses and Endorsements for Policy ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="26" width="139" height="13" uuid="85f5d7da-922f-40ca-9652-0b12eaaeafde"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[TERRORISM EXCLUSION CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="43" width="479" height="14" uuid="87dad62c-e6d1-4b81-ad16-034a813e0d64"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[involves damage to property: or]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="43" width="39" height="14" uuid="1b5ff8e2-970f-4401-abd3-cebb4cd5d788"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="56" width="479" height="14" uuid="5ee42367-567b-4d92-bc37-419212a24665"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[endangers life other than that of the person committing the action: or]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="56" width="39" height="14" uuid="1e082610-3aa2-4467-b278-64e56c15fdb7"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="69" width="479" height="14" uuid="b0f98f77-8a2e-494c-a9a4-08cf23442eb4"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[creates a risk to the health or safety of the public or a section of the public: or]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="69" width="39" height="14" uuid="7b9c5096-2d44-46df-9feb-e032a18a41ad"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="82" width="479" height="14" uuid="4e8af356-2feb-4be3-ad78-c5ec8c70755c"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Is designed to interface with or disrupt an electronic system.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="82" width="39" height="14" uuid="9f5fda11-5ad8-4fbe-86ef-7b298d360eaa"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="110" width="479" height="25" uuid="486fe70b-7949-4053-95df-ea60feae61fd"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[In any action, suit or other proceedings where the Company alleges that by reason of the provisions of this condition any loss or damage is not covered by this insurance the burden of proving that such loss or damage  is covered shall be upon the insured.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="110" width="39" height="14" uuid="463770db-4f21-494c-a04b-a12c6c28e8c3"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="176" width="139" height="13" uuid="31159c35-ff25-4fad-b28d-50b1580bb2fd"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[PAIR AND SET ENDORSEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="190" width="521" height="60" uuid="5af22a56-a21a-4676-9ac6-6b2c8a527a4a"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[It is understood and agreed that in the event of loss or damage to any accessory or accessories, spare part or spare parts forming part of a pair or set, the measure of loss or damage to such accessory or spare part  shall be its reasonable and fair proportion to the total value of the pair or set, giving consideration to the importance of said accessories or spare parts, but in no event shall such loss or damage be construed to mean a total loss of the pair or set.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="273" width="139" height="13" uuid="cfb6f2f1-de88-47fd-9aad-7397c5494880"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[DRUNKEN DRIVER CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="286" width="520" height="27" uuid="88f88a1d-ef1a-4e08-bcdd-8c158978aeda"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[It is hereby understood and agreed that the company shall not indemnify the assured in respect of claim/s arising from accidents while driver of the Insured vehicle is under the influence of intoxicating liquor, drugs, chemical and the like.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="371" width="519" height="39" uuid="305381b0-4967-436c-822f-9519fb485794"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[It is hereby declared and agreed that the company shall not be liable for loss or damage under this Policy unless such loss or damage exceeds 0.5% of the Insured's estimated Fair Market Value minimum of Pesos 2,000.00 for each and every loss.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="358" width="139" height="13" uuid="1ca4f8d1-b1c7-4c55-8591-4440b7e00821"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[DEDUCTIBLE CLAUSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="479" width="519" height="30" uuid="0fcf529f-8b10-4434-9fe2-8813a8fdd3eb"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[It is hereby declared and agreed that this policy does not cover any accessory whether standard or not to MAKE / MODEL of the insured vehicle unless such accessory is one of those declared on the Policy.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="466" width="139" height="13" uuid="ddf3c349-6d87-4cc8-95bb-ad75b3f78ed8"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[MOTOR VEHICLE ACCESSORY ENDORSEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="551" width="519" height="59" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Warranted that in the event of loss to the whole vehicle or losses necessitating importation of parts not locally manufactured, the company's liability shall be limited to the actual cost of the vehicle or the importedparts concerned less cost of taxes, freight and other miscellaneous charges relative thereto.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="538" width="139" height="13" uuid="e30e7ca2-fcfd-423c-a3a5-3411a9360ddf"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[IMPORTATION CLAUSE]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="260" y="2" width="161" height="12" uuid="92992a80-c83f-4550-90ed-abf27dfe2c5a"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{policyNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="410" width="521" height="14" uuid="d954501f-0bb7-4271-9b12-08f276ac4d73"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[WITH BUILT IN ACCESSORIES]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<image>
+				<reportElement x="79" y="0" width="561" height="89" uuid="1aff1a0f-a8a5-4f4d-bf74-68b465be6875"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="222" y="105" width="139" height="13" uuid="e30e7ca2-fcfd-423c-a3a5-3411a9360ddf"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[ACTS OF NATURE ENDORSEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="141" width="504" height="43" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[In consideration of the payment by the Insured to the Company of an additional premium and subject to the conditions under this endorsement as well as the terms and conditions of Section III - Loss or Damage Items 2 to 7 of the Motor Car policy, the company will indemnify the Insured against direct loss of or damage to the Scheduled Vehicle, its accessories and spare parts caused by the perils Earthquake, Typhoon, Flood, and Volcanic Eruption and other convulsions of nature.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="118" width="573" height="13" uuid="e30e7ca2-fcfd-423c-a3a5-3411a9360ddf"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(Cover for Earthquake, Typhoon, Flood, Volcanic Eruption, Lightning, Fire and Other Convulsions of Nature)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="187" width="504" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Definitions:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="204" width="478" height="28" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Earthquake refers to a weak to violent trembling of the ground produced by the sudden displacement of rocks or rock materials below the earth's surface as recorded by Philippine Institute of Volcanology and Seismology.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="204" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="232" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="231" width="478" height="28" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The term "Typhoon" as used in this endorsement shall be understood to mean a Typhoon or Storm as recorded by the Weather Bureau.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="258" width="478" height="38" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The term "FLOOD" is defined as the entry of water into the Insured Vehicle from without or the submersion of the Insured Vehicle, due to the inundation of land not usually covered by water, (a) by reason of an extra ordinary high tide or (b) following Typhoon, Cyclone, and/or Windstorm or (c) due to bursting or overflowing of rivers, reservoirs, canals and the like.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="259" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="322" width="478" height="27" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Lightning shall mean a gigantic electrostatic discharge between the cloud and the ground, other clouds, or within a cloud, the result of which is a sudden release of electricity causing a distinctive bright flare, followed by a thunderclap.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="296" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="322" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="295" width="478" height="28" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Volcanic eruption cover shall be specified only as losses arising from lava flow, pyroclastic ejecta, glowing clouds and ash fall caused by the eruption of a volcano as recorded by the Philippine Institue of Volcanology and Seismology.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="348" width="478" height="27" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The term "Fire" as used in this endorsement shall refer to that whic is caused by lightning, wildfire caused by lightning, earthquake, and/or volcanic eruption.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="348" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="374" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Other convulsion of nature are those other violent disturbances of nature.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="374" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="141" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[A.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="187" width="24" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[B.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="402" width="504" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Limit of Liability]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="402" width="24" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[C.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="413" width="504" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The limit of liability under this endorsement shall be as indicated in the Motor Car policy schedule.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="435" width="504" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Exceptions:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="451" width="504" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The Company shall not be a liable to pay for:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="435" width="24" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[D.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="531" width="479" height="27" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Extension of damage or theft as result of the neglect of the Insured to use all reasonable means to save and preserve the property during after the loss (earthquake, typhoon, flood, volcanic eruption, other convulsions of nature).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="508" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Any malicious damage caused by the Insured, any member of his family or by person in the Insured's service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="520" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Third party bodily injury and/or property damage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="484" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Consequential loss, depreciation, wear and tear;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="531" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="484" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="473" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Loss or damage within the deductible of the Policy.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="520" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="496" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="473" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="507" width="27" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="496" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Loss or damage to tires, unless the Scheduled Vehicle is damaged at the same time;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="581" width="139" height="13" uuid="e30e7ca2-fcfd-423c-a3a5-3411a9360ddf"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[CLAIMS GUIDELINES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="604" width="525" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The following shall be the claims guidelines for the handling of claims arising from acts of nature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="627" width="504" height="27" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The processing, evaluation, approval and settlement of motorcar acts of nature claims shall be guided by the applicable terms and conditions of the motorcar policy and of this endorsement, as well as the claims policies and procedures of Standard Insurance Co., Inc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="627" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<image>
+				<reportElement x="64" y="0" width="561" height="89" uuid="1aff1a0f-a8a5-4f4d-bf74-68b465be6875"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="54" y="89" width="504" height="33" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The insured shall give notice to the Company of a claim caused by any of the perils covered by this endorsement within seven (7) days from the date of occurrence with full particulars, otherwise, the claim may be declined for delayed reporting and aggravation/extension of damage sustained. The full particulars of the reported claim shall include the following:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="89" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="191" width="478" height="27" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The term "Fire" as used in this endorsement shall refer to that whic is caused by lightning, wildfire caused by lightning, earthquake, and/or volcanic eruption.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="157" width="478" height="24" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Brief description of the occurrence and damage sustained by the insured vehicle (examples: flooded sedan up to dashboard level; insured SUV completely submerged in lahar; unit's rooftop panel crashed by a fallen electric post during typhoon etc.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="180" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Whereabouts of the damaged insured unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="133" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Date, time and place of occurrence of catastrophic event/convulsion of nature.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="217" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Other convulsion of nature are those other violent disturbances of nature.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="191" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="133" width="27" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="122" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Name of Insured]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="180" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="145" width="27" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="122" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="157" width="27" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="145" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Description of the insured vehicle (make/model and plate number)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="217" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="244" width="504" height="33" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[All insured vehicles with acts of nature claims or loss or damage proximately caused by any of the specific perils covered under this Endorsement, as defined herein, shall be subject to inspection by the Technical Department before commencement of any repairs, otherwise, claim may be denied due to unauthorized repair.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="244" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="285" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="285" width="504" height="33" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Standard Insurance's Technical Department shall inspect the damaged insured vehicle and put tamper-proof marks or labels on vital vehicle components that would need further tests or assessments before they can be determined damaged as result of the covered peril and shall be subject to re-inspection by Technical Department.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="327" width="504" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The following basic claims documents shall be required from the Insured:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="327" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="362" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Driver's License and Official Receipt (if the insured vehicle was being operated/driven at the time of loss)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="350" width="27" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="362" width="27" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="374" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="339" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Copy of Insurance Policy*]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="339" width="27" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5.1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="350" width="478" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Certificate of Registration and Official Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="374" width="478" height="12" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Police Report or Incident Report or Notarized Affidavit of Loss *Items 1 and 2 may be provided by the writing outlet]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="408" width="504" height="33" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The liability of the Company shall be limited to damages proximately caused or a attributable to the acts of nature peril covered under the Policy.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="408" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="440" width="24" height="13" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="440" width="504" height="33" uuid="51870359-206c-46a1-b4fd-aa3597bf1e59"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[The amount of loss payable under the Policy shall be net of the Policy deductible and depreciation for each and every Acts of Nature loss and shall be subjected to the limit or sub-limit declared in the Policy.]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
