@@ -1,7 +1,7 @@
 
   {
-    "zone": "AA1",
-    "packageTitle": "ASIA PROTECT PESO 500",
+    "zone": "AC1",
+    "packageTitle": "ASIA PROTECT DOLLAR 50,000",
     "benefits": [
       {
         "header": "Emergency Medical Assistance",
@@ -16,36 +16,36 @@
           {
             "order": 1,
             "benefit": "Claims outside the Usual Country of Residence",
-            "coverage1": "P 500,000.00",
-            "coverage2": "P 250,000.00",
+            "coverage1": "$ 50,000.00",
+            "coverage2": "$ 25,000.00",
             "subtitle": false
           },
           {
             "order": 2,
             "benefit": "Claims within the Usual Country of Residence (In PhP)",
-            "coverage1": "P 50,000.00",
-            "coverage2": "P 25,000.00",
+            "coverage1": "P 250,000.00",
+            "coverage2": "P 125,000.00",
             "subtitle": false
           },
           {
             "order": 3,
             "benefit": "First Medical Assistance (in case of Pre-Existing Illness)",
-            "coverage1": "NIL",
-            "coverage2": "NIL",
+            "coverage1": "$ 500.00",
+            "coverage2": "$ 250.00",
             "subtitle": false
           }, 
           {
             "order": 4,
             "benefit": "Hospital Income",
-            "coverage1": "P 1,500.00 max of P 15,000.00",
-            "coverage2": "P 750.00 max of P 7,500.00",
+            "coverage1": "$90.00 max of $900.00",
+            "coverage2": "$45.00 max of $450.00",
             "subtitle": false
           },
             {
             "order": 5,
             "benefit": "Emergency Dental Care",
-            "coverage1": "P 5,000.00",
-            "coverage2": "P 2,500.00",
+            "coverage1": "$ 500.00",
+            "coverage2": "$ 250.00",
             "subtitle": false
           }
         ]
@@ -77,8 +77,8 @@
             {
             "order": 9,
             "benefit": "Compassionate Visit",
-            "coverage1": "Actual expense for transportation P1,000.00/day max of P10,000.00",
-            "coverage2": "Actual expense for transportation P500.00/day max of P5,000.00",
+            "coverage1": "Actual expense for transportation $ 100.00/day max of $ 1,000.00",
+            "coverage2": "Actual expense for transportation $ 50.00/day max of $ 500.00",
             "subtitle": false
             },
             {
@@ -103,7 +103,7 @@
            {
             "order": 12,
             "benefit": "Accidental Death/Permanent Total Disability",
-            "coverage1": "P 750,000.00",
+            "coverage1": "$ 50,000.00",
             "coverage2": "NIL",
             "subtitle": false
            },
@@ -117,14 +117,14 @@
             {
             "order": 14,
             "benefit": "Accidental Cause",
-            "coverage1": "P 10,000.00",
+            "coverage1": "$ 1,000.00",
             "coverage2": "NIL",
             "subtitle": false
             },
             {
             "order": 15,
             "benefit": "Non-Accidental Cause",
-            "coverage1": "P 10,000.00",
+            "coverage1": "$ 250.00",
             "coverage2": "NIL",
             "subtitle": false
             }
@@ -136,85 +136,85 @@
           {
             "order": 16,
             "benefit": "Trip Cancellation",
-            "coverage1": "Up to P 50,000.00",
-            "coverage2": "Up to P 25,000.00",
+            "coverage1": "Up to $ 3,000.00",
+            "coverage2": "Up to $ 1,500.00",
             "subtitle": false
            },
            {
             "order": 17,
             "benefit": "Trip Termination",
-            "coverage1": "Up to P 50,000.00",
-            "coverage2": "Up to P 25,000.00",
+            "coverage1": "Up to $ 3,000.00",
+            "coverage2": "Up to $ 1,500.00",
             "subtitle": false
            },
            {
             "order": 18,
             "benefit": "Delayed Departure (Outbound and Inbound)",
-            "coverage1": "P 2,000.00 max of P 8,000.00",
-            "coverage2": "P 1,000.00 max of P 4,000.00",
+            "coverage1": "$ 125.00 max of $ 500.00",
+            "coverage2": "$ 62.50 max of $ 250.00",
             "subtitle": false
            },
            {
             "order": 19,
             "benefit": "Missed Connection",
-            "coverage1": "P 2,000.00",
-            "coverage2": "P 1,000.00",
+            "coverage1": "$ 200.00",
+            "coverage2": "$ 100.00",
             "subtitle": false
            },
             {
             "order": 20,
             "benefit": "Diversion of Trip (Outbound and Inbound)",
-            "coverage1": "P 5,000.00",
-            "coverage2": "P 2,500.00",
+            "coverage1": "$ 500.00",
+            "coverage2": "$ 250.00",
             "subtitle": false
            },
            {
             "order": 21,
             "benefit": "Cash Assistance for Delayed Departure, Missed Connection and Diversion of Trip (Not Receipted)",
-            "coverage1": "Fixed at P 1,000.00",
-            "coverage2": "Fixed at P 500.00",
+            "coverage1": "Fixed at $ 25.00",
+            "coverage2": "Fixed at $ 12.50",
             "subtitle": false
            },
            {
             "order": 22,
             "benefit": "Baggage Delay",
-            "coverage1": "P 1,000.00 max of P 4,000.00",
-            "coverage2": "P 500.00 max of P 2,000.00",
+            "coverage1": "$ 100.00 max of $ 400.00",
+            "coverage2": "$ 50.00 max of $ 200.00",
             "subtitle": false
            },
            {
             "order": 23,
             "benefit": "Cash Assistance for Baggage Delay (Non-receipted)",
-            "coverage1": "Fixed at P 1,000.00",
-            "coverage2": "Fixed at P 500.00",
+            "coverage1": "Fixed at $ 100.00",
+            "coverage2": "Fixed at $ 50.00",
             "subtitle": false
            },
            {
             "order": 24,
             "benefit": "Loss of Damage of Checked-In Baggage/Personal Effects",
-            "coverage1": "P 15,000.00",
-            "coverage2": "P 7,500.00",
+            "coverage1": "$ 1,000.00",
+            "coverage2": "$ 500.00",
             "subtitle": false
            },
            {
             "order": 25,
             "benefit": "Indemnity for theft of Luggage or personal belongings not checked-in",
-            "coverage1": "P 7,500.00",
-            "coverage2": "P 3,750.00",
+            "coverage1": "$ 500.00",
+            "coverage2": "$ 250.00",
             "subtitle": false
            },
            {
             "order": 26,
             "benefit": "Hijack",
-            "coverage1": "P 2,000.00/day",
-            "coverage2": "P 1,000.00/day",
+            "coverage1": "$ 100.00 per day",
+            "coverage2": "$ 50.00 per day",
             "subtitle": false
            },
            {
             "order": 27,
             "benefit": "Loss of Travel Documents",
-            "coverage1": "P 25,000.00",
-            "coverage2": "P 12,500.00",
+            "coverage1": "$ 2,000.00",
+            "coverage2": "$ 1,000.00",
             "subtitle": false
            },
            {
@@ -227,22 +227,22 @@
            {
             "order": 29,
             "benefit": "Loss of Personal Money",
-            "coverage1": "P 15,000.00",
-            "coverage2": "P 15,000.00",
+            "coverage1": "$ 1,000.00",
+            "coverage2": "$ 500.00",
             "subtitle": false
            },
            {
             "order": 30,
             "benefit": "Advance of Money",
-            "coverage1": "P 5,000.00",
-            "coverage2": "P 2,500.00",
+            "coverage1": "$ 500.00",
+            "coverage2": "$ 250.00",
             "subtitle": false
            },
            {
             "order": 31,
             "benefit": "Car Rental Excess Protection",
-            "coverage1": "P 10,000.00",
-            "coverage2": "P 5,000.00",
+            "coverage1": "$ 1,000.00",
+            "coverage2": "$ 500.00",
             "subtitle": false
            }
              ]
@@ -253,8 +253,8 @@
           {
             "order": 32,
             "benefit": "Personal Liability",
-            "coverage1": "P 500,000.00",
-            "coverage2": "P 250,000.00",
+            "coverage1": "$ 50,000.00",
+            "coverage2": "$ 25,000.00",
             "subtitle": false
            }
            ]
