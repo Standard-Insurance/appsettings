@@ -1,0 +1,230 @@
+  {
+    "zone": "WE1",
+    "packageTitle": "WORLDWIDE PROTECT PESO 1.5M",
+    "benefits": [
+      {
+        "header": "Emergency Medical Assistance",
+        "contents": [
+          {
+            "order": 0,
+            "benefit": "Medical Treatment",
+            "coverage1": "0.00",
+            "subtitle": true
+          },
+          {
+            "order": 1,
+            "benefit": "Claims outside the Usual Country of Residence",
+            "coverage1": "P 1,500,000.00",
+            "subtitle": false
+          },
+          {
+            "order": 2,
+            "benefit": "Claims within the Usual Country of Residence (In PhP)",
+            "coverage1": "P 150,000.00",
+            "subtitle": false
+          },
+          {
+            "order": 3,
+            "benefit": "First Medical Assistance (in case of Pre-Existing Illness)",
+            "coverage1": "NIL",
+            "subtitle": false
+          }, 
+          {
+            "order": 4,
+            "benefit": "Hospital Income",
+            "coverage1": "P 2,000.00 max of P 20,000.00",
+            "subtitle": false
+          },
+            {
+            "order": 5,
+            "benefit": "Emergency Dental Care",
+            "coverage1": "P 15,000.00",
+            "subtitle": false
+          }
+        ]
+      },
+      {
+        "header": "Emergency Travel Assistance",
+        "contents": [
+           {
+            "order": 6,
+            "benefit": "Emergency Medical Evacuation / Repatriation",
+            "coverage1": "Actual Expense",
+            "subtitle": false
+           },
+            {
+              "order": 7,
+            "benefit": "Repatriation of Mortal Remains",
+            "coverage1": "Actual Expense",
+            "subtitle": false
+            },
+            {
+            "order": 8,
+            "benefit": "Care of Minor Child/ren",
+            "coverage1": "Actual Expense",
+            "subtitle": false
+            },
+            {
+            "order": 9,
+            "benefit": "Compassionate Visit",
+            "coverage1": "Actual expense for transportation  P1,500.00/day max of P15,000.00",
+            "subtitle": false
+            },
+            {
+            "order": 10,
+            "benefit": "Delivery of Medicines",
+            "coverage1": "Unlimited",
+            "subtitle": false
+            },
+            {
+            "order": 11,
+            "benefit": "Relay of Urgent Messages",
+            "coverage1": "Actual Expense",
+            "subtitle": false
+          }
+        ]
+      },
+      {
+        "header": "Personal Accident Benefit",
+        "contents": [
+           {
+            "order": 12,
+            "benefit": "Accidental Death/Permanent Total Disability",
+            "coverage1": "P 1,500,000.00",
+            "subtitle": false
+           },
+            {
+            "order": 13,
+            "benefit": "Funeral Assistance",
+            "coverage1": "0.00",
+            "subtitle": true
+            },
+            {
+            "order": 14,
+            "benefit": "Accidental Cause",
+            "coverage1": "P 20,000.00",
+            "subtitle": false
+            },
+            {
+            "order": 15,
+            "benefit": "Non-Accidental Cause",
+            "coverage1": "P 10,000.00",
+            "subtitle": false
+            }
+             ]
+          },
+            {
+        "header": "Travel Inconvenience Benefits",
+        "contents": [
+          {
+            "order": 16,
+            "benefit": "Trip Cancellation",
+            "coverage1": "Up to P 65,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 17,
+            "benefit": "Trip Termination",
+            "coverage1": "Up to P 65,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 18,
+            "benefit": "Delayed Departure (Outbound and Inbound)",
+            "coverage1": "P 2,500.00 max of P 10,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 19,
+            "benefit": "Missed Connection",
+            "coverage1": "P 2,500.00",
+            "subtitle": false
+           },
+            {
+            "order": 20,
+            "benefit": "Diversion of Trip (Outbound and Inbound)",
+            "coverage1": "P 15,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 21,
+            "benefit": "Cash Assistance for Delayed Departure, Missed Connection and Diversion of Trip (Not Receipted)",
+            "coverage1": "Fixed at P 1,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 22,
+            "benefit": "Baggage Delay",
+            "coverage1": "P 1,500.00 max of P 6,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 23,
+            "benefit": "Cash Assistance for Baggage Delay (Non-receipted)",
+            "coverage1": "Fixed at P 1,500.00",
+            "subtitle": false
+           },
+           {
+            "order": 24,
+            "benefit": "Loss of Damage of Checked-In Baggage/Personal Effects",
+            "coverage1": "P 25,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 25,
+            "benefit": "Indemnity for theft of Luggage or personal belongings not checked-in",
+            "coverage1": "P 10,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 26,
+            "benefit": "Hijack",
+            "coverage1": "P 2,500.00/day",
+            "subtitle": false
+           },
+           {
+            "order": 27,
+            "benefit": "Loss of Travel Documents",
+            "coverage1": "P 50,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 28,
+            "benefit": "Location and Forwarding of Lost / Stolen Luggage / Personal Effects",
+            "coverage1": "Actual Expense",
+            "subtitle": false
+           },
+           {
+            "order": 29,
+            "benefit": "Loss of Personal Money",
+            "coverage1": "P 25,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 30,
+            "benefit": "Advance of Money",
+            "coverage1": "P 15,000.00",
+            "subtitle": false
+           },
+           {
+            "order": 31,
+            "benefit": "Car Rental Excess Protection",
+            "coverage1": "P 20,000.00",
+            "subtitle": false
+           }
+             ]
+          },
+            {
+        "header": "Personal Liability Benefit",
+        "contents": [
+          {
+            "order": 32,
+            "benefit": "Personal Liability",
+            "coverage1": "P 1,000,000.00",
+            "subtitle": false
+           }
+           ]
+      }
+  
+    ]
+  }
