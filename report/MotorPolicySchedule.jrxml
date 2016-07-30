@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
-<!-- 2015-04-28T14:59:52 -->
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2016-07-29T22:38:17 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MotorPolicySchedule" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="978261b3-06f6-4920-9778-08db2c7c7302">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
@@ -92,6 +92,7 @@
 	<parameter name="esignURL" class="java.lang.String" isForPrompting="false"/>
 	<parameter name="logo" class="java.lang.String" isForPrompting="false"/>
 	<parameter name="esignURL2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="polno" class="java.lang.Integer"/>
 	<queryString language="SQL">
 		<![CDATA[]]>
 	</queryString>
@@ -100,13 +101,6 @@
 	</background>
 	<title>
 		<band height="104" splitType="Stretch">
-			<staticText>
-				<reportElement x="174" y="89" width="215" height="15" uuid="c7647edd-3b0e-46a3-b7aa-0c801556a3f7"/>
-				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="12" isBold="false"/>
-				</textElement>
-				<text><![CDATA[P O L I C Y    S C H E D U L E]]></text>
-			</staticText>
 			<image>
 				<reportElement x="69" y="6" width="561" height="83" uuid="1aff1a0f-a8a5-4f4d-bf74-68b465be6875"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
@@ -115,6 +109,14 @@
 				<reportElement x="69" y="6" width="561" height="83" uuid="5717ad48-e605-47d9-a685-cc694d064d43"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="174" y="89" width="215" height="15" uuid="dadad079-aa97-4598-94f4-8b2d90e530b6"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{polno} != null ? "P O L I C Y    S C H E D U L E" : "QUOTATION DETAILS")
+]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<detail>
@@ -194,13 +196,6 @@
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="308" y="3" width="84" height="11" uuid="87e36846-cb0e-4199-82a5-979fa3fcc7a5"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[Policy Number]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="308" y="20" width="84" height="11" uuid="99525c3a-95a3-4b33-a98f-fd4fca8ceb2f"/>
@@ -828,18 +823,24 @@
 				<text><![CDATA[authorized representative is system generated and serves as your official policy.]]></text>
 			</staticText>
 			<image>
-				<reportElement x="344" y="554" width="119" height="34" uuid="12489589-31b2-4094-8157-829e1604294c"/>
+				<reportElement x="344" y="554" width="119" height="34" uuid="12489589-31b2-4094-8157-829e1604294c">
+					<printWhenExpression><![CDATA[$P{polno} != null]]></printWhenExpression>
+				</reportElement>
 				<imageExpression><![CDATA[$P{esignURL}]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="345" y="578" width="84" height="11" uuid="53f58aa1-1446-4d0c-9ef0-eb79b8aba8ad"/>
+				<reportElement x="345" y="578" width="84" height="11" uuid="53f58aa1-1446-4d0c-9ef0-eb79b8aba8ad">
+					<printWhenExpression><![CDATA[$P{polno} != null]]></printWhenExpression>
+				</reportElement>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Patricia Echauz Chilip]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="328" y="588" width="118" height="11" uuid="3c170cfc-4ab6-4bbb-baaa-b5d84d6e219f"/>
+				<reportElement key="" x="328" y="588" width="118" height="11" uuid="3c170cfc-4ab6-4bbb-baaa-b5d84d6e219f">
+					<printWhenExpression><![CDATA[$P{polno} != null]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="8"/>
 				</textElement>
@@ -892,7 +893,8 @@
 				<textElement>
 					<font size="8" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{policyNumber}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($P{polno} != null ? $P{policyNumber} : $P{quotationNumber})
+]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="403" y="20" width="100" height="11" uuid="1f036e2c-053f-4419-8696-fb60f781b3bf"/>
@@ -1312,18 +1314,24 @@
 				<text><![CDATA[ACTS OF NATURE ENDORSEMENT]]></text>
 			</staticText>
 			<image>
-				<reportElement x="78" y="554" width="119" height="34" uuid="a551fb91-8ade-429a-ad2f-5025ad1b8ade"/>
+				<reportElement x="78" y="554" width="119" height="34" uuid="a551fb91-8ade-429a-ad2f-5025ad1b8ade">
+					<printWhenExpression><![CDATA[$P{polno} != null]]></printWhenExpression>
+				</reportElement>
 				<imageExpression><![CDATA[$P{esignURL2}]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="79" y="578" width="84" height="11" uuid="09695a97-da72-44df-b0a0-0dee0cc1db08"/>
+				<reportElement x="79" y="578" width="84" height="11" uuid="09695a97-da72-44df-b0a0-0dee0cc1db08">
+					<printWhenExpression><![CDATA[$P{polno} != null]]></printWhenExpression>
+				</reportElement>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Maribeth C. Castro]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="62" y="588" width="118" height="11" uuid="fdb9a2e3-aaff-430d-8f55-3e789857e347"/>
+				<reportElement x="62" y="588" width="118" height="11" uuid="fdb9a2e3-aaff-430d-8f55-3e789857e347">
+					<printWhenExpression><![CDATA[$P{polno} != null]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="8"/>
 				</textElement>
@@ -1335,6 +1343,15 @@
 					<font size="7"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{address1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="3" width="84" height="11" uuid="3fdb8862-c3a2-48e0-acd3-0fb8e8a702bf"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[
+($P{polno} != null ? "Policy Number" : "Quotation Number")
+]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="88">
